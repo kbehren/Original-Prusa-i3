@@ -35,23 +35,15 @@ module body()
 
 module ventilation_holes()
     {
-    for ( i = [0 : 9] )
+    for ( i = [-2 : 9] )
     {
-        translate([40 + (i*6),10.5,-1]) cube([3.65,19+50,1.2]);
+        //translate([40 + (i*6),10.5,-1]) cube([3.65,19+50,1.2]);
         translate([40 + (i*6),10.5,-1]) cube([3.65,19,10]);
         translate([40 + (i*6),10.5+25,-1]) cube([3.65,19,10]);
         translate([40 + (i*6),10.5+50,-1]) cube([3.65,19,10]);
     }
-    for ( i = [0 : -4] )
-    {
-      translate([40 + (i*6),10.5,-1]) cube([3.65,19+50,1.2]);
-    }
-    for ( i = [-6 : -7] )
-    {
-      translate([46 + (i*6),20.5,-1]) cube([3.65,19+40,1.2]);
-    }
     
-    translate([15,10,1]) cube([20,55,1.5]);  
+    //translate([15,10,1]) cube([20,55,1.5]);  
 }
 
 module cutouts()
@@ -92,8 +84,8 @@ module cutouts()
     translate([55.65,0.5,12]) cube([5.7,10,2.2]);  
 
     // side panel lightning slot
-    translate([2,10,3] ) cube([7,65,5]);  
-    translate([101,10,3] ) cube([3,70,5]);  
+    //translate([2,10,3] ) cube([7,65,5]);  
+    //translate([101,10,3] ) cube([3,70,5]);  
 
     // corners - cut
     translate([53,3,1.5]) rotate([0,0,70]) cube([10,10,50]);  
@@ -111,8 +103,8 @@ difference()
     // large corner cut
     translate( [0 , -20, -3] ) rotate([0,45,45]) cube( [ 30, 30 , 20 ] );  
 
-    translate([30,79,1]) rotate([0,0,-90]) linear_extrude(height = 0.8) 
-    { text("R1",font = "helvetica:style=Bold", size=6, center=true); }    
+    translate([18,65,1]) rotate([0,0,-90]) linear_extrude(height = 0.8) 
+    { text("R1 (mod)",font = "helvetica:style=Bold", size=6, center=true); }    
 }
 }
  
