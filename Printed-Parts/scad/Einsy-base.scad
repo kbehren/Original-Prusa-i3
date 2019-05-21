@@ -452,16 +452,16 @@ difference()
     // nuts with supports
     translate([-5.7,19.5,24.5]) difference()
     {
-        translate([0,0,-0.25]) rotate([0,0,0]) cube([12,5.7,2.7], center =true);
+        translate([0,0,-0.45]) rotate([0,0,0]) cube([12,5.7,2.9], center =true);
         translate([-8.6,-5,0.35]) cube([10,15,0.75]);
         translate([4.6,-5,0.35]) cube([4,15,0.75]);
         translate([-2.6,-5.6,0.65]) cube([15,4,0.35]);
-        translate([-2.6,1.6,0.65]) cube([15,4,0.35]);
+        translate([-2.6,1.6,0.65]) cube([15,4,0.35]); // Left
     }
 
     translate([-5.7,36.5,24.5]) difference()
     {
-        translate([0,0,-0.25]) rotate([0,0,0]) cube([12,5.7,2.7], center =true);
+        translate([0,0,-0.45]) rotate([0,0,0]) cube([12,5.7,2.9], center =true);
         translate([-8.6,-5,0.35]) cube([10,15,0.75]);
         translate([4.6,-5,0.35]) cube([4,15,0.75]);
         translate([-2.6,-5.6,0.65]) cube([15,4,0.35]);
@@ -476,7 +476,7 @@ difference()
     // nuts with supports
     translate([67,90.8 -4,24.5]) difference()
     {
-        translate([0,0,-0.25]) rotate([0,0,90]) cube([10,5.7,2.7], center =true);
+        translate([0,0,-0.45]) rotate([0,0,90]) cube([10,5.7,2.9], center =true);
         translate([-5.6,-5,0.65]) cube([4,15,0.5]);
         translate([1.6,-5,0.65]) cube([4,15,0.5]);
         translate([-5.6,-3.6,0.35]) cube([15,4,0.75]);
@@ -485,7 +485,7 @@ difference()
 
     translate([83,98,24.5]) difference()
     {
-        translate([0,0,-0.25]) rotate([0,0,90]) cube([10,5.7,2.7], center =true);
+        translate([0,0,-0.45]) rotate([0,0,90]) cube([10,5.7,2.9], center =true);
         translate([-5.6,-5,0.65]) cube([4,15,0.5]);
         translate([1.6,-5,0.65]) cube([4,15,0.5]);
         translate([-5.6,-7.6,0.35]) cube([15,4,0.75]);
